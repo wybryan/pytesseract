@@ -16,7 +16,7 @@ pytesseract.pytesseract.tesseract_cmd = tesseract_path
 # Example tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract'
 
 # Simple image to string
-print(pytesseract.image_to_string(Image.open(os.path.join(os.path.dirname(__file__),'tests/data', 'test.png'))))
+print(pytesseract.image_to_string(Image.open(os.path.join(os.path.dirname(__file__),'tests/data', 'multi_line_test.jpg'))))
 
 # In order to bypass the image conversions of pytesseract, just use relative or absolute image path
 # NOTE: In this case you should provide tesseract supported images or tesseract will return error
