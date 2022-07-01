@@ -1,0 +1,8 @@
+sudo add-apt-repository ppa:alex-p/tesseract-ocr5
+sudo apt update
+sudo apt install tesseract-ocr libtesseract-dev
+sudo apt install tesseract-ocr-eng
+sudo apt install tesseract-ocr-fra
+sudo apt install tesseract-ocr-chi-sim
+sudo apt install tesseract-ocr-osd
+
