@@ -49,12 +49,12 @@ print(pytesseract.image_to_data(Image.open(os.path.join(os.path.dirname(__file__
 print(pytesseract.image_to_osd(Image.open(os.path.join(os.path.dirname(__file__),'tests/data', 'test.png'))))
 
 # Get a searchable PDF
-pdf = pytesseract.image_to_pdf_or_hocr(os.path.join(os.path.dirname(__file__),'test/data', 'test.png'), extension='pdf')
+pdf = pytesseract.image_to_pdf_or_hocr(os.path.join(os.path.dirname(__file__),'tests/data', 'test.png'), extension='pdf')
 with open('test.pdf', 'w+b') as f:
     f.write(pdf) # pdf type is bytes by default
 
 # Get HOCR output
-hocr = pytesseract.image_to_pdf_or_hocr(os.path.join(os.path.dirname(__file__),'test/data', 'test.png'), extension='hocr')
+hocr = pytesseract.image_to_pdf_or_hocr(os.path.join(os.path.dirname(__file__),'tests/data', 'test.png'), extension='hocr')
 
 # Get ALTO XML output
-xml = pytesseract.image_to_alto_xml(os.path.join(os.path.dirname(__file__),'test/data', 'test.png'))
+xml = pytesseract.image_to_alto_xml(os.path.join(os.path.dirname(__file__),'tests/data', 'test.png'))
